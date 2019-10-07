@@ -1,0 +1,20 @@
+{
+    "name": "waleayandiran/rating",
+    "description": "A rating system that can be integrated with any customer satisfaction and feedback system",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "waleCloud",
+            "email": "walexrvp@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Tests\\": "tests/"}
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
