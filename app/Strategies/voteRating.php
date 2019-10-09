@@ -5,12 +5,6 @@ use App\Interfaces\Rating;
 use Exception;
 
 class VoteRating extends Exception implements Rating {
-	public $rated;
-	function __construct()
-	{
-		
-	}
-
 	function rate($value)
 	{
 		try {
