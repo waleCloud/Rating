@@ -11,8 +11,6 @@ class NumericRating extends Exception implements Rating {
 	{
 		$this->min = $min;
 		$this->max = $max;
-
-
 	}
 
 	function rate($value)

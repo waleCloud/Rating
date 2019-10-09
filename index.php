@@ -3,11 +3,11 @@ use App\CreateRating;
 
 require 'vendor/autoload.php';
 
-$initialiseRating = new CreateRating('number'); // number rating
+$initialiseRating = new CreateRating('vote'); // number rating
 
-$rating = $initialiseRating->index('1', '5');
+$rating = $initialiseRating->index();
 
-echo $rating->rate(4). "<br />";
+echo $rating->rate(false). "<br />";
 
 $ratingsKeyValuePairList = array
 (
@@ -18,4 +18,8 @@ $ratingsKeyValuePairList = array
   1 => 2,
 );
 
-echo $rating->getAverage($ratingsKeyValuePairList);
+$ratingVal = array(
+  1,true,false, 0, 0, 0, 0,1,1,1,1,1
+);
+
+echo $rating->getAverage($ratingVal);
