@@ -3,12 +3,17 @@ namespace App\Strategies;
 
 use App\Interfaces\Rating;
 use Exception;
+use InvalidArgumentException;
 
 class NumericRating extends Exception implements Rating {
 	public $value;
 	public $min, $max;
 	function __construct($min, $max)
 	{
+		if ($min >= $max || ($max - $min < 2) )
+			throw new InvalidArgumentException(
+				"MaxRange must be greater than MinRange by atleast a difference of 2 "
+			);
 		$this->min = $min;
 		$this->max = $max;
 	}
@@ -28,6 +33,7 @@ class NumericRating extends Exception implements Rating {
 	function getAverage($ratingsKeyValuePairList)
 	{
 		try {
+			if (!is_array($ratingsKeyValuePairList)) throw new Exception("Must be an array!");
 			if (\count($ratingsKeyValuePairList) > $this->max 
 			|| count($ratingsKeyValuePairList) < $this->min )
 				throw new Exception("Length of array should above {$this->min} & less than or == {$this->max}", 1);
