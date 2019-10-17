@@ -1,6 +1,6 @@
 # Rating
 
-[![Build Status](https://travis-ci.org/waleCloud/Rating.svg?branch=master)](https://travis-ci.org/waleCloud/Rating)
+[![Build Status](https://travis-ci.org/waleCloud/Rating.svg?branch=master)](https://travis-ci.org/waleCloud/Rating) [![CircleCI](https://circleci.com/gh/waleCloud/Rating/tree/master.svg?style=svg)](https://circleci.com/gh/waleCloud/Rating/tree/master)
 
 A rating system that can be integrated with any customer satisfaction and feedback system
 
