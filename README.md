@@ -1,6 +1,6 @@
 # Rating
 
-[![Build Status](https://travis-ci.org/waleCloud/Rating.svg?branch=master)](https://travis-ci.org/waleCloud/Rating) [![CircleCI](https://circleci.com/gh/waleCloud/Rating/tree/master.svg?style=svg)](https://circleci.com/gh/waleCloud/Rating/tree/master)
+[![Build Status](https://travis-ci.org/waleCloud/Rating.svg?branch=master)](https://travis-ci.org/waleCloud/Rating) [![CircleCI](https://circleci.com/gh/waleCloud/Rating/tree/master.svg?style=svg)](https://circleci.com/gh/waleCloud/Rating/tree/master)[![Maintainability](https://api.codeclimate.com/v1/badges/4a974c8a845eb913f4ae/maintainability)](https://codeclimate.com/github/waleCloud/Rating/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/4a974c8a845eb913f4ae/test_coverage)](https://codeclimate.com/github/waleCloud/Rating/test_coverage)
 
 A rating system that can be integrated with any customer satisfaction and feedback system
 
