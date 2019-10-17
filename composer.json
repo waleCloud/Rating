@@ -1,12 +1,15 @@
 {
-    "name": "waleayandiran/rating",
+    "name": "walecloud/rating",
     "description": "A rating system that can be integrated with any customer satisfaction and feedback system",
     "type": "library",
+    "keywords": ["rating", "rate", "star", "numeric", "feedback", "rank", "ranking"],
     "license": "MIT",
     "authors": [
         {
-            "name": "waleCloud",
-            "email": "walexrvp@gmail.com"
+            "name": "Wale Ayandiran",
+            "email": "walecloud@gmail.com",
+            "homepage": "https://www.github.com/waleCloud/Rating",
+            "role": "Software Engineer"
         }
     ],
     "autoload": {
@@ -16,7 +19,9 @@
         "psr-4": {"Tests\\": "tests/"}
     },
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": "^php7.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "8"
     },
