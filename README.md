@@ -1,4 +1,7 @@
 # Rating
+
+[![Build Status](https://travis-ci.org/waleCloud/Rating.svg?branch=master)](https://travis-ci.org/waleCloud/Rating)
+
 A rating system that can be integrated with any customer satisfaction and feedback system
 
 ## Options
