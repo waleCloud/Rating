@@ -17,8 +17,7 @@ cache:
     - $HOME/.composer/cache/files
 
 script:
-  - "phpunit --coverage-text --coverage-clover ./tests/logs/clover.xml"
-  - composer test -- --coverage-clover=coverage.xml
+  - "phpunit --coverage-text --coverage-clover ./build/logs/clover.xml"
 
 after_script:
   - ./cc-test-reporter after-build -t clover

@@ -2,3 +2,5 @@
 /.phpunit.result.cache
 .phpunit.result.cache
 /build/logs/clover.xml
+./build/logs/clover.xml
+
