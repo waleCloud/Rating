@@ -33,4 +33,4 @@ jobs:
             - ./vendor
 
       # run tests with phpunit
-      - run: ./vendor/bin/phpunit
+      - run: phpunit
