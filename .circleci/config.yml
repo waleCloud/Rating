@@ -24,26 +24,25 @@ jobs:
             - v1-dependencies-{{ checksum "composer.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
       - run: composer install -n --prefer-dist
-
       - save_cache:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-
       - run:
           name: Setup Code Climate test-reporter
           # download test reporter as a static binary
           command: |
+            sudo pecl channel-update pecl.php.net
+            sudo pecl install xdebug && sudo docker-php-ext-enable xdebug
             curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             chmod +x ./cc-test-reporter
-
       # run tests with phpunit or codecept
       - run:
           name: Run tests
           command: | 
             # notify Code Climate of a pending test report using `before-build`
+            sudo mkdir -p $CIRCLE_TEST_REPORTS/phpunit
             ./cc-test-reporter before-build
             sudo vendor/bin/phpunit --coverage-clover clover.xml
             # upload test report to Code Climate using `after-build`
